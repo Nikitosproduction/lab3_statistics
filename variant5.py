@@ -1,4 +1,4 @@
-# Вариант 5: анализ численности населения России
+
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
@@ -58,9 +58,4 @@ class PopulationAnalysis:
         ax.legend()
         ax.grid(True, linestyle='--', alpha=0.6)
         return full_years, full_values
-        # добавлена проверка данных
-        fix: добавил комментарий
-#добавил проверку на пустой файл
-feat: добавил проверку данных
-docs: добавил описание варианта 5
-style: добавил отступ для читаемости
+       
