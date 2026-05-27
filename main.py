@@ -124,3 +124,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = App(root)
     root.mainloop()
+    #добавил комментарий в функцию load_variant5
+    docs: пояснил загрузку варианта 5
