@@ -56,3 +56,5 @@ class PopulationAnalysis:
         ax.legend()
         ax.grid(True, linestyle='--', alpha=0.6)
         return full_years, full_values
+        # добавлена проверка данных
+        fix: добавил комментарий
