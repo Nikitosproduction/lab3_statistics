@@ -58,3 +58,5 @@ class PopulationAnalysis:
         return full_years, full_values
         # добавлена проверка данных
         fix: добавил комментарий
+#добавил проверку на пустой файл
+feat: добавил проверку данных
