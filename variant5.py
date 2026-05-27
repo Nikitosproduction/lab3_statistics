@@ -21,6 +21,7 @@ class PopulationAnalysis:
         ax.grid(True, linestyle='--', alpha=0.6)
         ax.legend()
 
+    
     def calculate_max_min_change(self):
         changes = self.df['population'].pct_change().dropna() * 100
         max_idx = changes.idxmax()
@@ -62,3 +63,4 @@ class PopulationAnalysis:
 #добавил проверку на пустой файл
 feat: добавил проверку данных
 docs: добавил описание варианта 5
+style: добавил отступ для читаемости
