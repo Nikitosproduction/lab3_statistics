@@ -34,7 +34,7 @@ class PopulationAnalysis:
             'max_decline': round(changes[min_idx], 2),
             'max_decline_year': int(min_idx)
         }
-
+    # расчёт прогноза по скользящей средней
     def moving_average_forecast(self, n_periods=3, forecast_years=5):
         data = self.df['population'].values
         forecasts = []
