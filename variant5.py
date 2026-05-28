@@ -13,6 +13,7 @@ class PopulationAnalysis:
     def get_table_data(self):
         return self.df.values.tolist(), self.df.columns.tolist()
 
+    
     def plot_data(self, ax):
         ax.plot(self.df['year'], self.df['population'], 'o-', label='Численность населения')
         ax.set_title('Численность населения России')
