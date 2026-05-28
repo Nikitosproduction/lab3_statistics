@@ -5,6 +5,7 @@ import numpy as np
 from tkinter import messagebox
 
 class PopulationAnalysis:
+     """Анализ численности населения России и прогнозирование"""
     def __init__(self, filepath):
         self.df = pd.read_csv(filepath)
         self.df['year'] = pd.to_numeric(self.df['year'])
