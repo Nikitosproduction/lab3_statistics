@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 class InflationAnalysis:
+    """Анализ инфляции в России и прогнозирование"""
     def __init__(self, filepath):
         self.df = pd.read_csv(filepath)
         self.df['year'] = pd.to_numeric(self.df['year'])
