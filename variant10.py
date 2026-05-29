@@ -1,8 +1,10 @@
+# Вариант 10: анализ инфляции в России
 import pandas as pd
 import matplotlib.pyplot as plt
 import numpy as np
 
 class InflationAnalysis:
+    """Анализ инфляции в России и прогнозирование"""
     def __init__(self, filepath):
         self.df = pd.read_csv(filepath)
         self.df['year'] = pd.to_numeric(self.df['year'])
@@ -10,6 +12,7 @@ class InflationAnalysis:
 
     def get_table_data(self):
         return self.df.values.tolist(), self.df.columns.tolist()
+        
 
     def plot_data(self, ax):
         ax.plot(self.df['year'], self.df['inflation'], 'o-', label='Инфляция', color='green')
@@ -25,7 +28,7 @@ class InflationAnalysis:
         for _ in range(forecast_years):
             prices.append(prices[-1] * (1 + avg_inflation))
         return prices[1:]
-
+# расчёт прогноза по скользящей средней
     def moving_average_forecast(self, n_periods=3, forecast_years=5):
         data = self.df['inflation'].values
         forecasts = []
