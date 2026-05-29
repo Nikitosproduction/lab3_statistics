@@ -57,7 +57,7 @@ class App:
         toolbar_frame.pack(fill='x')
         self.toolbar = NavigationToolbar2Tk(self.canvas, toolbar_frame)
         self.toolbar.update()
-
+    # загрузка данных для варианта 5
     def load_variant5(self):
         filepath = "data/population.csv"
         try:
@@ -69,7 +69,8 @@ class App:
         except Exception as e:
             messagebox.showerror("Ошибка", f"Не удалось загрузить данные: {e}")
 
-    def load_variant10(self):
+    # загрузка варианта 10 (инфляция)
+        def load_variant10(self):
         filepath = "data/inflation.csv"
         try:
             self.analysis = InflationAnalysis(filepath)
