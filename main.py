@@ -57,7 +57,7 @@ class App:
         toolbar_frame.pack(fill='x')
         self.toolbar = NavigationToolbar2Tk(self.canvas, toolbar_frame)
         self.toolbar.update()
-
+    # загрузка данных для варианта 5
     def load_variant5(self):
         filepath = "data/population.csv"
         try:
@@ -124,3 +124,5 @@ if __name__ == "__main__":
     root = tk.Tk()
     app = App(root)
     root.mainloop()
+    #добавил комментарий в функцию load_variant5
+    docs: пояснил загрузку варианта 5
