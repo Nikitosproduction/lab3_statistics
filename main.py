@@ -69,7 +69,8 @@ class App:
         except Exception as e:
             messagebox.showerror("Ошибка", f"Не удалось загрузить данные: {e}")
 
-    def load_variant10(self):
+    # загрузка варианта 10 (инфляция)
+        def load_variant10(self):
         filepath = "data/inflation.csv"
         try:
             self.analysis = InflationAnalysis(filepath)
