@@ -11,6 +11,7 @@ class InflationAnalysis:
 
     def get_table_data(self):
         return self.df.values.tolist(), self.df.columns.tolist()
+        
 
     def plot_data(self, ax):
         ax.plot(self.df['year'], self.df['inflation'], 'o-', label='Инфляция', color='green')
