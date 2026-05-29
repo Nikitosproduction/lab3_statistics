@@ -57,7 +57,7 @@ class App:
         toolbar_frame.pack(fill='x')
         self.toolbar = NavigationToolbar2Tk(self.canvas, toolbar_frame)
         self.toolbar.update()
-
+    # загрузка данных для варианта 5
     def load_variant5(self):
         filepath = "data/population.csv"
         try:
