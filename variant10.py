@@ -28,7 +28,7 @@ class InflationAnalysis:
         for _ in range(forecast_years):
             prices.append(prices[-1] * (1 + avg_inflation))
         return prices[1:]
-
+# расчёт прогноза по скользящей средней
     def moving_average_forecast(self, n_periods=3, forecast_years=5):
         data = self.df['inflation'].values
         forecasts = []
